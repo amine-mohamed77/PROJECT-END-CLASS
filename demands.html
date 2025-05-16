@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Demands - UniHousing</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">Uni<span>Housing</span></a>
+                </div>
+                <nav class="nav-menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="offers.html">Offers</a></li>
+                        <li><a href="demands.html" class="active">Demands</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="auth-buttons">
+                    <a href="login.html" class="btn btn-outline">Login</a>
+                    <a href="register.html" class="btn btn-primary">Sign Up</a>
+                </div>
+                <div class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Demands Hero Section -->
+    <section class="demands-hero">
+        <div class="demands-hero-background"></div>
+        <div class="container">
+            <div class="demands-hero-content">
+                <h1>Find Your Perfect Student Housing</h1>
+                <p>Connect with property owners and find the ideal accommodation for your academic journey</p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <i class="fas fa-home stat-icon"></i>
+                        <span class="number">200+</span>
+                        <span class="label">Active Demands</span>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-map-marker-alt stat-icon"></i>
+                        <span class="number">30+</span>
+                        <span class="label">Cities</span>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-check-circle stat-icon"></i>
+                        <span class="number">95%</span>
+                        <span class="label">Success Rate</span>
+                    </div>
+                </div>
+                <div class="hero-cta">
+                    <a href="#post-demand" class="btn btn-primary btn-lg">
+                        <i class="fas fa-plus"></i> Post Your Demand
+                    </a>
+                    <a href="#active-demands" class="btn btn-outline btn-lg">
+                        <i class="fas fa-search"></i> Browse Demands
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Post Demand Section -->
+    <section id="post-demand" class="post-demand-section">
+        <div class="container">
+            <div class="post-demand-container">
+                <div class="post-demand-header">
+                    <div class="header-icon">
+                        <i class="fas fa-pen-to-square"></i>
+                    </div>
+                    <h2>Post Your Housing Requirements</h2>
+                    <p>Let property owners know what you're looking for and find your perfect match</p>
+                </div>
+                <form class="demand-form">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label><i class="fas fa-university"></i> University</label>
+                            <div class="input-with-icon">
+                                <i class="fas fa-university"></i>
+                                <input type="text" placeholder="Your university name">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label><i class="fas fa-map-marker-alt"></i> Location</label>
+                            <div class="input-with-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <input type="text" placeholder="Preferred area">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label><i class="fas fa-home"></i> Property Type</label>
+                            <div class="select-with-icon">
+                                <i class="fas fa-home"></i>
+                                <select>
+                                    <option value="">Select type</option>
+                                    <option value="apartment">Apartment</option>
+                                    <option value="house">House</option>
+                                    <option value="room">Room</option>
+                                    <option value="dormitory">Dormitory</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label><i class="fas fa-dollar-sign"></i> Budget</label>
+                            <div class="input-with-icon">
+                                <i class="fas fa-dollar-sign"></i>
+                                <input type="number" placeholder="Maximum monthly rent">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label><i class="fas fa-calendar"></i> Move-in Date</label>
+                            <div class="input-with-icon">
+                                <i class="fas fa-calendar"></i>
+                                <input type="date">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label><i class="fas fa-clock"></i> Duration</label>
+                            <div class="select-with-icon">
+                                <i class="fas fa-clock"></i>
+                                <select>
+                                    <option value="">Select duration</option>
+                                    <option value="semester">One Semester</option>
+                                    <option value="year">One Year</option>
+                                    <option value="longer">Longer</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group full-width">
+                        <label><i class="fas fa-comment"></i> Additional Requirements</label>
+                        <div class="textarea-with-icon">
+                            <i class="fas fa-comment"></i>
+                            <textarea placeholder="Describe your requirements, preferences, and any other details..."></textarea>
+                        </div>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i> Post Demand
+                        </button>
+                        <button type="reset" class="btn btn-outline">
+                            <i class="fas fa-redo"></i> Reset Form
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Active Demands Section -->
+    <section id="active-demands" class="demands-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="header-left">
+                    <h2>Active Demands</h2>
+                    <p>Browse through current student housing requirements</p>
+                </div>
+                <div class="demand-filters">
+                    <div class="filter-group">
+                        <i class="fas fa-university"></i>
+                        <select>
+                            <option value="">All Universities</option>
+                            <option value="stanford">Stanford</option>
+                            <option value="mit">MIT</option>
+                            <option value="ucla">UCLA</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <i class="fas fa-home"></i>
+                        <select>
+                            <option value="">All Types</option>
+                            <option value="apartment">Apartment</option>
+                            <option value="house">House</option>
+                            <option value="room">Room</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <i class="fas fa-sort"></i>
+                        <select>
+                            <option value="">Sort By</option>
+                            <option value="newest">Newest First</option>
+                            <option value="oldest">Oldest First</option>
+                            <option value="budget-high">Highest Budget</option>
+                            <option value="budget-low">Lowest Budget</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="demands-grid">
+                <!-- Demand Card 1 -->
+                <div class="demand-card">
+                    <div class="demand-header">
+                        <div class="student-info">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="Sarah Johnson">
+                            <div>
+                                <h3>Sarah Johnson</h3>
+                                <p>Computer Science Student</p>
+                                <div class="student-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span>(4.5)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="demand-tags">
+                            <span class="demand-tag new">New</span>
+                            <span class="demand-tag verified">Verified</span>
+                        </div>
+                    </div>
+                    <div class="demand-content">
+                        <div class="demand-details">
+                            <div class="detail">
+                                <i class="fas fa-university"></i>
+                                <span>Stanford University</span>
+                            </div>
+                            <div class="detail">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Palo Alto Area</span>
+                            </div>
+                            <div class="detail">
+                                <i class="fas fa-home"></i>
+                                <span>Studio Apartment</span>
+                            </div>
+                            <div class="detail">
+                                <i class="fas fa-dollar-sign"></i>
+                                <span>Budget: $800/mo</span>
+                            </div>
+                        </div>
+                        <p class="demand-description">Looking for a quiet studio apartment near campus. Prefer furnished options with good internet connection.</p>
+                        <div class="demand-features">
+                            <span class="feature-tag"><i class="fas fa-wifi"></i> High-Speed Internet</span>
+                            <span class="feature-tag"><i class="fas fa-couch"></i> Furnished</span>
+                            <span class="feature-tag"><i class="fas fa-parking"></i> Parking</span>
+                        </div>
+                        <div class="demand-footer">
+                            <div class="demand-meta">
+                                <span class="date"><i class="far fa-clock"></i> Posted 2 days ago</span>
+                                <span class="views"><i class="far fa-eye"></i> 245 views</span>
+                            </div>
+                            <button class="btn btn-primary">
+                                <i class="fas fa-envelope"></i> Contact Student
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Demand Card 2 -->
+                <div class="demand-card">
+                    <div class="demand-header">
+                        <div class="student-info">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="Michael Chen">
+                            <div>
+                                <h3>Michael Chen</h3>
+                                <p>Business Administration</p>
+                                <div class="student-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span>(5.0)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="demand-tags">
+                            <span class="demand-tag popular">Popular</span>
+                            <span class="demand-tag verified">Verified</span>
+                        </div>
+                    </div>
+                    <div class="demand-content">
+                        <div class="demand-details">
+                            <div class="detail">
+                                <i class="fas fa-university"></i>
+                                <span>MIT</span>
+                            </div>
+                            <div class="detail">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Cambridge Area</span>
+                            </div>
+                            <div class="detail">
+                                <i class="fas fa-home"></i>
+                                <span>Shared House</span>
+                            </div>
+                            <div class="detail">
+                                <i class="fas fa-dollar-sign"></i>
+                                <span>Budget: $600/mo</span>
+                            </div>
+                        </div>
+                        <p class="demand-description">Seeking a room in a shared house with other students. Would prefer a place with a study room and good transportation links.</p>
+                        <div class="demand-features">
+                            <span class="feature-tag"><i class="fas fa-book"></i> Study Room</span>
+                            <span class="feature-tag"><i class="fas fa-subway"></i> Near Transit</span>
+                            <span class="feature-tag"><i class="fas fa-users"></i> Roommates</span>
+                        </div>
+                        <div class="demand-footer">
+                            <div class="demand-meta">
+                                <span class="date"><i class="far fa-clock"></i> Posted 1 week ago</span>
+                                <span class="views"><i class="far fa-eye"></i> 189 views</span>
+                            </div>
+                            <button class="btn btn-primary">
+                                <i class="fas fa-envelope"></i> Contact Student
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Demand Card 3 -->
+                <div class="demand-card">
+                    <div class="demand-header">
+                        <div class="student-info">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1976&q=80" alt="Emma Rodriguez">
+                            <div>
+                                <h3>Emma Rodriguez</h3>
+                                <p>Architecture Student</p>
+                                <div class="student-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>(4.0)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="demand-tags">
+                            <span class="demand-tag featured">Featured</span>
+                            <span class="demand-tag verified">Verified</span>
+                        </div>
+                    </div>
+                    <div class="demand-content">
+                        <div class="demand-details">
+                            <div class="detail">
+                                <i class="fas fa-university"></i>
+                                <span>UCLA</span>
+                            </div>
+                            <div class="detail">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Westwood Area</span>
+                            </div>
+                            <div class="detail">
+                                <i class="fas fa-home"></i>
+                                <span>1-Bed Apartment</span>
+                            </div>
+                            <div class="detail">
+                                <i class="fas fa-dollar-sign"></i>
+                                <span>Budget: $1000/mo</span>
+                            </div>
+                        </div>
+                        <p class="demand-description">Looking for a one-bedroom apartment with natural light and space for art supplies. Must be pet-friendly.</p>
+                        <div class="demand-features">
+                            <span class="feature-tag"><i class="fas fa-sun"></i> Natural Light</span>
+                            <span class="feature-tag"><i class="fas fa-paw"></i> Pet Friendly</span>
+                            <span class="feature-tag"><i class="fas fa-palette"></i> Art Space</span>
+                        </div>
+                        <div class="demand-footer">
+                            <div class="demand-meta">
+                                <span class="date"><i class="far fa-clock"></i> Posted 3 days ago</span>
+                                <span class="views"><i class="far fa-eye"></i> 312 views</span>
+                            </div>
+                            <button class="btn btn-primary">
+                                <i class="fas fa-envelope"></i> Contact Student
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination">
+                <a href="#" class="prev"><i class="fas fa-chevron-left"></i> Previous</a>
+                <div class="page-numbers">
+                    <a href="#" class="active">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <span>...</span>
+                    <a href="#">10</a>
+                </div>
+                <a href="#" class="next">Next <i class="fas fa-chevron-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html">Uni<span>Housing</span></a>
+                    <p>Connecting students with their perfect housing solutions.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="offers.html">Offers</a></li>
+                            <li><a href="demands.html">Demands</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>For Students</h3>
+                        <ul>
+                            <li><a href="offers.html">Find Housing</a></li>
+                            <li><a href="demands.html">Post Requirements</a></li>
+                            <li><a href="#">Roommate Finder</a></li>
+                            <li><a href="#">University Guides</a></li>
+                            <li><a href="#">Student Resources</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>For Owners</h3>
+                        <ul>
+                            <li><a href="offers.html?create=true">List Property</a></li>
+                            <li><a href="demands.html">View Student Demands</a></li>
+                            <li><a href="#">Landlord Resources</a></li>
+                            <li><a href="#">Verification Process</a></li>
+                            <li><a href="#">Success Stories</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 UniHousing. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./main.js"></script>
+</body>
+</html> 

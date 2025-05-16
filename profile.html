@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile - UniHousing</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">Uni<span>Housing</span></a>
+                </div>
+                <nav class="nav-menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="offers.html">Offers</a></li>
+                        <li><a href="demands.html">Demands</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="auth-buttons">
+                    <a href="profile.html" class="btn btn-primary">My Profile</a>
+                </div>
+                <div class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Profile Section -->
+    <section class="profile-section">
+        <div class="container">
+            <div class="profile-grid">
+                <!-- Sidebar Navigation -->
+                <div class="profile-sidebar">
+                    <div class="user-info">
+                        <div class="user-avatar">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="User Avatar">
+                            <button class="edit-avatar">
+                                <i class="fas fa-camera"></i>
+                            </button>
+                        </div>
+                        <h2>Michael Chen</h2>
+                        <p class="user-type">Property Owner</p>
+                        <div class="user-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>4.5 (24 reviews)</span>
+                        </div>
+                    </div>
+                    <nav class="profile-nav">
+                        <ul>
+                            <li class="active">
+                                <a href="#dashboard">
+                                    <i class="fas fa-home"></i>
+                                    Dashboard
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#my-listings">
+                                    <i class="fas fa-list"></i>
+                                    My Listings
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#favorites">
+                                    <i class="fas fa-heart"></i>
+                                    Favorites
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#messages">
+                                    <i class="fas fa-envelope"></i>
+                                    Messages
+                                    <span class="badge">3</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#settings">
+                                    <i class="fas fa-cog"></i>
+                                    Settings
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <!-- Main Content -->
+                <div class="profile-content">
+                    <!-- Dashboard Section -->
+                    <div class="profile-section active" id="dashboard">
+                        <h1>Dashboard</h1>
+                        <div class="dashboard-stats">
+                            <div class="stat-card">
+                                <div class="stat-icon">
+                                    <i class="fas fa-home"></i>
+                                </div>
+                                <div class="stat-info">
+                                    <h3>Active Listings</h3>
+                                    <p class="stat-number">5</p>
+                                </div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-icon">
+                                    <i class="fas fa-eye"></i>
+                                </div>
+                                <div class="stat-info">
+                                    <h3>Total Views</h3>
+                                    <p class="stat-number">1,234</p>
+                                </div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="stat-info">
+                                    <h3>New Messages</h3>
+                                    <p class="stat-number">3</p>
+                                </div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-icon">
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="stat-info">
+                                    <h3>Average Rating</h3>
+                                    <p class="stat-number">4.5</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="recent-activity">
+                            <h2>Recent Activity</h2>
+                            <div class="activity-list">
+                                <div class="activity-item">
+                                    <div class="activity-icon">
+                                        <i class="fas fa-eye"></i>
+                                    </div>
+                                    <div class="activity-content">
+                                        <p>Your listing "Modern Studio Apartment" received 25 views today</p>
+                                        <span class="activity-time">2 hours ago</span>
+                                    </div>
+                                </div>
+                                <div class="activity-item">
+                                    <div class="activity-icon">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <div class="activity-content">
+                                        <p>New message from Sarah Johnson regarding "Cozy Studio Near Campus"</p>
+                                        <span class="activity-time">5 hours ago</span>
+                                    </div>
+                                </div>
+                                <div class="activity-item">
+                                    <div class="activity-icon">
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="activity-content">
+                                        <p>You received a new 5-star review for "Modern Studio Apartment"</p>
+                                        <span class="activity-time">1 day ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- My Listings Section -->
+                    <div class="profile-section" id="my-listings">
+                        <div class="section-header">
+                            <h1>My Listings</h1>
+                            <a href="offers.html?create=true" class="btn btn-primary">
+                                <i class="fas fa-plus"></i>
+                                Add New Listing
+                            </a>
+                        </div>
+                        <div class="listings-grid">
+                            <!-- Listing Card -->
+                            <div class="listing-card">
+                                <div class="listing-image">
+                                    <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Modern Studio Apartment">
+                                    <div class="listing-status active">Active</div>
+                                </div>
+                                <div class="listing-content">
+                                    <h3>Modern Studio Apartment</h3>
+                                    <div class="listing-location">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <p>Near Stanford University, Palo Alto</p>
+                                    </div>
+                                    <div class="listing-details">
+                                        <span><i class="fas fa-bed"></i> 1 Bed</span>
+                                        <span><i class="fas fa-bath"></i> 1 Bath</span>
+                                        <span><i class="fas fa-vector-square"></i> 35 m²</span>
+                                    </div>
+                                    <div class="listing-price">$650/mo</div>
+                                    <div class="listing-actions">
+                                        <a href="offer-details.html" class="btn btn-outline">View Details</a>
+                                        <button class="btn btn-primary">Edit</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Add more listing cards as needed -->
+                        </div>
+                    </div>
+
+                    <!-- Favorites Section -->
+                    <div class="profile-section" id="favorites">
+                        <h1>My Favorites</h1>
+                        <div class="favorites-grid">
+                            <!-- Favorite Property Card -->
+                            <div class="property-card">
+                                <div class="property-image">
+                                    <img src="https://images.unsplash.com/photo-1560185127-6ed189bf02f4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Favorite Property">
+                                    <button class="favorite-btn active">
+                                        <i class="fas fa-heart"></i>
+                                    </button>
+                                </div>
+                                <div class="property-content">
+                                    <div class="property-header">
+                                        <h3>Cozy Studio Near Campus</h3>
+                                        <p class="price">$600/mo</p>
+                                    </div>
+                                    <div class="property-location">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <p>Stanford Area, Palo Alto</p>
+                                    </div>
+                                    <div class="property-features">
+                                        <div class="feature">
+                                            <i class="fas fa-bed"></i>
+                                            <span>1 Bed</span>
+                                        </div>
+                                        <div class="feature">
+                                            <i class="fas fa-bath"></i>
+                                            <span>1 Bath</span>
+                                        </div>
+                                        <div class="feature">
+                                            <i class="fas fa-vector-square"></i>
+                                            <span>30 m²</span>
+                                        </div>
+                                    </div>
+                                    <a href="offer-details.html" class="btn btn-primary btn-full">View Details</a>
+                                </div>
+                            </div>
+                            <!-- Add more favorite property cards as needed -->
+                        </div>
+                    </div>
+
+                    <!-- Messages Section -->
+                    <div class="profile-section" id="messages">
+                        <h1>Messages</h1>
+                        <div class="messages-container">
+                            <div class="messages-sidebar">
+                                <div class="search-messages">
+                                    <input type="text" placeholder="Search messages...">
+                                    <i class="fas fa-search"></i>
+                                </div>
+                                <div class="message-list">
+                                    <div class="message-item active">
+                                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="Sarah Johnson">
+                                        <div class="message-info">
+                                            <h4>Sarah Johnson</h4>
+                                            <p>Hi, I'm interested in your Modern Studio Apartment...</p>
+                                            <span class="message-time">2 hours ago</span>
+                                        </div>
+                                    </div>
+                                    <!-- Add more message items as needed -->
+                                </div>
+                            </div>
+                            <div class="message-content">
+                                <div class="message-header">
+                                    <div class="user-info">
+                                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="Sarah Johnson">
+                                        <div>
+                                            <h3>Sarah Johnson</h3>
+                                            <p>Stanford University Student</p>
+                                        </div>
+                                    </div>
+                                    <div class="message-actions">
+                                        <button class="btn btn-outline">
+                                            <i class="fas fa-phone"></i>
+                                        </button>
+                                        <button class="btn btn-outline">
+                                            <i class="fas fa-video"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="message-thread">
+                                    <!-- Message bubbles will be added here -->
+                                </div>
+                                <div class="message-input">
+                                    <input type="text" placeholder="Type your message...">
+                                    <button class="btn btn-primary">
+                                        <i class="fas fa-paper-plane"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Settings Section -->
+                    <div class="profile-section" id="settings">
+                        <h1>Account Settings</h1>
+                        <div class="settings-grid">
+                            <div class="settings-section">
+                                <h2>Profile Information</h2>
+                                <form class="settings-form">
+                                    <div class="form-group">
+                                        <label>Full Name</label>
+                                        <input type="text" value="Michael Chen">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Email</label>
+                                        <input type="email" value="michael.chen@example.com">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Phone</label>
+                                        <input type="tel" value="+1 (555) 123-4567">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Bio</label>
+                                        <textarea>Property owner with 5 years of experience in student housing.</textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Save Changes</button>
+                                </form>
+                            </div>
+                            <div class="settings-section">
+                                <h2>Security</h2>
+                                <form class="settings-form">
+                                    <div class="form-group">
+                                        <label>Current Password</label>
+                                        <input type="password">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>New Password</label>
+                                        <input type="password">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Confirm New Password</label>
+                                        <input type="password">
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Update Password</button>
+                                </form>
+                            </div>
+                            <div class="settings-section">
+                                <h2>Notifications</h2>
+                                <div class="notification-settings">
+                                    <div class="notification-item">
+                                        <div class="notification-info">
+                                            <h3>Email Notifications</h3>
+                                            <p>Receive updates about your listings and messages</p>
+                                        </div>
+                                        <label class="switch">
+                                            <input type="checkbox" checked>
+                                            <span class="slider"></span>
+                                        </label>
+                                    </div>
+                                    <div class="notification-item">
+                                        <div class="notification-info">
+                                            <h3>SMS Notifications</h3>
+                                            <p>Get instant alerts about new messages</p>
+                                        </div>
+                                        <label class="switch">
+                                            <input type="checkbox">
+                                            <span class="slider"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html">Uni<span>Housing</span></a>
+                    <p>Connecting students with their perfect housing solutions.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="offers.html">Offers</a></li>
+                            <li><a href="demands.html">Demands</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>For Students</h3>
+                        <ul>
+                            <li><a href="offers.html">Find Housing</a></li>
+                            <li><a href="demands.html">Post Requirements</a></li>
+                            <li><a href="#">Roommate Finder</a></li>
+                            <li><a href="#">University Guides</a></li>
+                            <li><a href="#">Student Resources</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>For Owners</h3>
+                        <ul>
+                            <li><a href="offers.html?create=true">List Property</a></li>
+                            <li><a href="demands.html">View Student Demands</a></li>
+                            <li><a href="#">Landlord Resources</a></li>
+                            <li><a href="#">Verification Process</a></li>
+                            <li><a href="#">Success Stories</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 UniHousing. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./main.js"></script>
+</body>
+</html> 

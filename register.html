@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - UniHousing</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">Uni<span>Housing</span></a>
+                </div>
+                <nav class="nav-menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="offers.html">Offers</a></li>
+                        <li><a href="demands.html">Demands</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="auth-buttons">
+                    <a href="login.html" class="btn btn-outline">Login</a>
+                    <a href="register.html" class="btn btn-primary">Sign Up</a>
+                </div>
+                <div class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Register Section -->
+    <section class="auth-section">
+        <div class="container">
+            <div class="auth-container">
+                <div class="auth-header">
+                    <h1>Create Account</h1>
+                    <p>Join our community of students and property owners</p>
+                </div>
+                <form id="registerForm" class="auth-form">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <div class="input-with-icon">
+                            <i class="fas fa-user"></i>
+                            <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <div class="input-with-icon">
+                            <i class="fas fa-envelope"></i>
+                            <input type="email" id="email" name="email" required placeholder="Enter your email">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <div class="input-with-icon">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" id="password" name="password" required placeholder="Create a password">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirm-password">Confirm Password</label>
+                        <div class="input-with-icon">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" id="confirm-password" name="confirm-password" required placeholder="Confirm your password">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="type">Account Type</label>
+                        <div class="select-with-icon">
+                            <i class="fas fa-user-tag"></i>
+                            <select id="type" name="type" required>
+                                <option value="">Select account type</option>
+                                <option value="student">Student</option>
+                                <option value="owner">Property Owner</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="avatar">Profile Picture</label>
+                        <div class="input-with-icon">
+                            <i class="fas fa-camera"></i>
+                            <input type="file" id="avatar" name="avatar" accept="image/*">
+                        </div>
+                    </div>
+                    <div class="form-options">
+                        <label class="terms">
+                            <input type="checkbox" name="terms" required>
+                            <span>I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></span>
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">Create Account</button>
+                </form>
+                <div class="auth-footer">
+                    <p>Already have an account? <a href="login.html">Sign In</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html">Uni<span>Housing</span></a>
+                    <p>Connecting students with their perfect housing solutions.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="offers.html">Offers</a></li>
+                            <li><a href="demands.html">Demands</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>For Students</h3>
+                        <ul>
+                            <li><a href="offers.html">Find Housing</a></li>
+                            <li><a href="demands.html">Post Requirements</a></li>
+                            <li><a href="#">Roommate Finder</a></li>
+                            <li><a href="#">University Guides</a></li>
+                            <li><a href="#">Student Resources</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>For Owners</h3>
+                        <ul>
+                            <li><a href="offers.html?create=true">List Property</a></li>
+                            <li><a href="demands.html">View Student Demands</a></li>
+                            <li><a href="#">Landlord Resources</a></li>
+                            <li><a href="#">Verification Process</a></li>
+                            <li><a href="#">Success Stories</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 UniHousing. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./auth.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html> 

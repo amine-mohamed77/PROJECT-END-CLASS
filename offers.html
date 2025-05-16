@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offers - UniHousing</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">Uni<span>Housing</span></a>
+                </div>
+                <nav class="nav-menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="offers.html" class="active">Offers</a></li>
+                        <li><a href="demands.html">Demands</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="auth-buttons">
+                    <a href="login.html" class="btn btn-outline">Login</a>
+                    <a href="register.html" class="btn btn-primary">Sign Up</a>
+                </div>
+                <div class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Offers Hero Section -->
+    <section class="offers-hero">
+        <div class="offers-hero-background"></div>
+        <div class="container">
+            <div class="offers-hero-content">
+                <h1>Available Properties</h1>
+                <p>Find your perfect student accommodation from our extensive listings</p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="number">500+</span>
+                        <span class="label">Active Listings</span>
+                    </div>
+                    <div class="stat">
+                        <span class="number">50+</span>
+                        <span class="label">Universities</span>
+                    </div>
+                    <div class="stat">
+                        <span class="number">1000+</span>
+                        <span class="label">Happy Students</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filters Section -->
+    <section class="filters-section">
+        <div class="container">
+            <div class="filters-header">
+                <h2>Find Your Perfect Home</h2>
+                <p>Use our advanced filters to find exactly what you're looking for</p>
+            </div>
+            <div class="filters-container">
+                <div class="filter-group">
+                    <label><i class="fas fa-map-marker-alt"></i> Location</label>
+                    <div class="search-input">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="University or city">
+                    </div>
+                </div>
+                <div class="filter-group">
+                    <label><i class="fas fa-home"></i> Property Type</label>
+                    <select>
+                        <option value="">All Types</option>
+                        <option value="apartment">Apartment</option>
+                        <option value="house">House</option>
+                        <option value="room">Room</option>
+                        <option value="dormitory">Dormitory</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label><i class="fas fa-dollar-sign"></i> Price Range</label>
+                    <select>
+                        <option value="">Any Price</option>
+                        <option value="0-500">$0 - $500</option>
+                        <option value="501-1000">$501 - $1000</option>
+                        <option value="1001-1500">$1001 - $1500</option>
+                        <option value="1501+">$1501+</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label><i class="fas fa-bed"></i> Bedrooms</label>
+                    <select>
+                        <option value="">Any</option>
+                        <option value="1">1 Bedroom</option>
+                        <option value="2">2 Bedrooms</option>
+                        <option value="3">3+ Bedrooms</option>
+                    </select>
+                </div>
+                <button class="btn btn-primary search-btn">
+                    <i class="fas fa-search"></i> Search Properties
+                </button>
+            </div>
+            <div class="quick-filters">
+                <span class="quick-filter-label">Popular:</span>
+                <a href="#" class="quick-filter">Near Campus</a>
+                <a href="#" class="quick-filter">Furnished</a>
+                <a href="#" class="quick-filter">Pet Friendly</a>
+                <a href="#" class="quick-filter">All Inclusive</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Properties Grid Section -->
+    <section class="property-section">
+        <div class="container">
+            <div class="property-grid">
+                <!-- Property Card 1 -->
+                <div class="property-card">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Modern Studio Apartment">
+                        <div class="property-overlay">
+                            <button class="favorite-btn">
+                                <i class="far fa-heart"></i>
+                            </button>
+                            <span class="property-tag">New</span>
+                        </div>
+                    </div>
+                    <div class="property-content">
+                        <div class="property-header">
+                            <h3>Modern Studio Apartment</h3>
+                            <p class="price">$650/mo</p>
+                        </div>
+                        <div class="property-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>Near Stanford University, Palo Alto</p>
+                        </div>
+                        <div class="property-features">
+                            <div class="feature">
+                                <i class="fas fa-bed"></i>
+                                <span>1 Bed</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-bath"></i>
+                                <span>1 Bath</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-vector-square"></i>
+                                <span>35 m²</span>
+                            </div>
+                        </div>
+                        <a href="offer-details.html?id=1" class="btn btn-primary btn-full">View Details</a>
+                    </div>
+                </div>
+
+                <!-- Property Card 2 -->
+                <div class="property-card">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1560185127-6ed189bf02f4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Shared 2-Bedroom Apartment">
+                        <div class="property-overlay">
+                            <button class="favorite-btn active">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                            <span class="property-tag">Popular</span>
+                        </div>
+                    </div>
+                    <div class="property-content">
+                        <div class="property-header">
+                            <h3>Shared 2-Bedroom Apartment</h3>
+                            <p class="price">$450/mo</p>
+                        </div>
+                        <div class="property-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>5 min from MIT, Cambridge</p>
+                        </div>
+                        <div class="property-features">
+                            <div class="feature">
+                                <i class="fas fa-bed"></i>
+                                <span>2 Beds</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-bath"></i>
+                                <span>1 Bath</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-vector-square"></i>
+                                <span>60 m²</span>
+                            </div>
+                        </div>
+                        <a href="offer-details.html?id=2" class="btn btn-primary btn-full">View Details</a>
+                    </div>
+                </div>
+
+                <!-- Property Card 3 -->
+                <div class="property-card">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1560185007-5f0bb1866cab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Luxury Student Housing">
+                        <div class="property-overlay">
+                            <button class="favorite-btn">
+                                <i class="far fa-heart"></i>
+                            </button>
+                            <span class="property-tag">Featured</span>
+                        </div>
+                    </div>
+                    <div class="property-content">
+                        <div class="property-header">
+                            <h3>Luxury Student Housing</h3>
+                            <p class="price">$850/mo</p>
+                        </div>
+                        <div class="property-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>UCLA Campus Area, Los Angeles</p>
+                        </div>
+                        <div class="property-features">
+                            <div class="feature">
+                                <i class="fas fa-bed"></i>
+                                <span>1 Bed</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-bath"></i>
+                                <span>1 Bath</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-vector-square"></i>
+                                <span>40 m²</span>
+                            </div>
+                        </div>
+                        <a href="offer-details.html?id=3" class="btn btn-primary btn-full">View Details</a>
+                    </div>
+                </div>
+
+                <!-- More Property Cards -->
+                <!-- Add more property cards here -->
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination">
+                <a href="#" class="active">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#" class="next">Next <i class="fas fa-chevron-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html">Uni<span>Housing</span></a>
+                    <p>Connecting students with their perfect housing solutions.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="offers.html">Offers</a></li>
+                            <li><a href="demands.html">Demands</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>For Students</h3>
+                        <ul>
+                            <li><a href="offers.html">Find Housing</a></li>
+                            <li><a href="demands.html">Post Requirements</a></li>
+                            <li><a href="#">Roommate Finder</a></li>
+                            <li><a href="#">University Guides</a></li>
+                            <li><a href="#">Student Resources</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>For Owners</h3>
+                        <ul>
+                            <li><a href="offers.html?create=true">List Property</a></li>
+                            <li><a href="demands.html">View Student Demands</a></li>
+                            <li><a href="#">Landlord Resources</a></li>
+                            <li><a href="#">Verification Process</a></li>
+                            <li><a href="#">Success Stories</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 UniHousing. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./main.js"></script>
+</body>
+</html> 

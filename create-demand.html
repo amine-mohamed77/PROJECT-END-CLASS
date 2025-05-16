@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Demand - UniHousing</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">Uni<span>Housing</span></a>
+                </div>
+                <nav class="nav-menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="offers.html">Offers</a></li>
+                        <li><a href="demands.html">Demands</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="auth-buttons">
+                    <a href="login.html" class="btn btn-outline">Login</a>
+                    <a href="register.html" class="btn btn-primary">Sign Up</a>
+                </div>
+                <div class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Create Demand Section -->
+    <section class="auth-section">
+        <div class="container">
+            <div class="auth-container">
+                <div class="auth-header">
+                    <h1>Post Your Housing Demand</h1>
+                    <p>Let property owners know what you're looking for</p>
+                </div>
+                <form id="createDemandForm" class="auth-form">
+                    <div class="form-group">
+                        <label for="title">Demand Title</label>
+                        <div class="input-with-icon">
+                            <i class="fas fa-heading"></i>
+                            <input type="text" id="title" name="title" required placeholder="Enter a descriptive title">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="university">Your University</label>
+                        <div class="input-with-icon">
+                            <i class="fas fa-university"></i>
+                            <input type="text" id="university" name="university" required placeholder="Enter your university name">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="location">Preferred Location</label>
+                        <div class="input-with-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <input type="text" id="location" name="location" required placeholder="Enter preferred area">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="type">Preferred Property Type</label>
+                        <div class="select-with-icon">
+                            <i class="fas fa-home"></i>
+                            <select id="type" name="type" required>
+                                <option value="">Select property type</option>
+                                <option value="apartment">Apartment</option>
+                                <option value="house">House</option>
+                                <option value="studio">Studio</option>
+                                <option value="room">Single Room</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="budget">Maximum Budget (€/month)</label>
+                        <div class="input-with-icon">
+                            <i class="fas fa-euro-sign"></i>
+                            <input type="number" id="budget" name="budget" required placeholder="Enter your maximum budget">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="move-in">Preferred Move-in Date</label>
+                        <div class="input-with-icon">
+                            <i class="fas fa-calendar"></i>
+                            <input type="date" id="move-in" name="move-in" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="duration">Duration of Stay</label>
+                        <div class="select-with-icon">
+                            <i class="fas fa-clock"></i>
+                            <select id="duration" name="duration" required>
+                                <option value="">Select duration</option>
+                                <option value="semester">One Semester</option>
+                                <option value="year">One Year</option>
+                                <option value="multiple-years">Multiple Years</option>
+                                <option value="flexible">Flexible</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="roommates">Number of Roommates</label>
+                        <div class="select-with-icon">
+                            <i class="fas fa-users"></i>
+                            <select id="roommates" name="roommates" required>
+                                <option value="">Select number of roommates</option>
+                                <option value="0">No roommates</option>
+                                <option value="1">1 roommate</option>
+                                <option value="2">2 roommates</option>
+                                <option value="3">3 roommates</option>
+                                <option value="4+">4 or more</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="preferences">Additional Preferences</label>
+                        <div class="amenities-grid">
+                            <label class="amenity-item">
+                                <input type="checkbox" name="preferences" value="wifi"> WiFi Required
+                            </label>
+                            <label class="amenity-item">
+                                <input type="checkbox" name="preferences" value="furnished"> Furnished
+                            </label>
+                            <label class="amenity-item">
+                                <input type="checkbox" name="preferences" value="parking"> Parking Needed
+                            </label>
+                            <label class="amenity-item">
+                                <input type="checkbox" name="preferences" value="pets"> Pet Friendly
+                            </label>
+                            <label class="amenity-item">
+                                <input type="checkbox" name="preferences" value="smoking"> Smoking Allowed
+                            </label>
+                            <label class="amenity-item">
+                                <input type="checkbox" name="preferences" value="vegetarian"> Vegetarian Household
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Additional Details</label>
+                        <div class="input-with-icon">
+                            <i class="fas fa-align-left"></i>
+                            <textarea id="description" name="description" required rows="4" placeholder="Describe your requirements and preferences in detail"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact">Contact Information</label>
+                        <div class="input-with-icon">
+                            <i class="fas fa-phone"></i>
+                            <input type="tel" id="contact" name="contact" required placeholder="Enter your phone number">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">Post Demand</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html">Uni<span>Housing</span></a>
+                    <p>Connecting students with their perfect housing solutions.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="offers.html">Offers</a></li>
+                            <li><a href="demands.html">Demands</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>For Students</h3>
+                        <ul>
+                            <li><a href="offers.html">Find Housing</a></li>
+                            <li><a href="create-demand.html">Post Requirements</a></li>
+                            <li><a href="#">Roommate Finder</a></li>
+                            <li><a href="#">University Guides</a></li>
+                            <li><a href="#">Student Resources</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>For Owners</h3>
+                        <ul>
+                            <li><a href="create-offer.html">List Property</a></li>
+                            <li><a href="demands.html">View Student Demands</a></li>
+                            <li><a href="#">Landlord Resources</a></li>
+                            <li><a href="#">Verification Process</a></li>
+                            <li><a href="#">Success Stories</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 UniHousing. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./auth.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html> 
